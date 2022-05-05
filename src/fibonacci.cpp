@@ -66,12 +66,10 @@ namespace assignment {
     if (n <= 1) {
       return n;
     }
-
-    // Напишите здесь свой код ...
-
-    // Tip: используйте реализованную функцию matrix_pow
-
-    return 0;
+    Matrix2x2 res = {{{0, 1}, {1, 1}}};
+    res = matrix_power(res, n - 1);
+    return res[1][1];
+    // Tip: используйте реализованную функцию matrix_power
   }
 
 }  // namespace assignment
